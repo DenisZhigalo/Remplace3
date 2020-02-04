@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Remplace 3</string>
+
+    <string name="error_disconnect">No Internet Connection</string>
+    <string name="error_empty_field">Empty field</string>
+    <string name="error_authentication_failed">Authentication failed</string>
+
+</resources>

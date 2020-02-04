@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="by.dz.remplace3.ui.screens.main.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBgSecondary"
+        tools:context=".ui.screens.main.MainNavigationActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbarContainer"
+            style="@style/ToolbarContainer"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iconBack"
+                style="@style/ToolbarBack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lock_24dp" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/ToolbarText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/toolbarShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_tabs_elevation"
+            android:src="@drawable/bottom_shadow"
+            app:layout_constraintBottom_toTopOf="@id/toolbarContainer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

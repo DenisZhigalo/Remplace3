@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorToolbar">#3C634A</color>
+
+    <color name="colorBgPrimary">#ffffff</color>
+    <color name="colorBgSecondary">#FCFBFD</color>
+
+    <color name="colorMessageSuccess">#65CCD3</color>
+    <color name="colorMessageError">#E85D71</color>
+
+    <color name="loading_container_bg">#4488878C</color>
+
+</resources>

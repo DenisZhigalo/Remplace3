@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/message_padding_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/indent_xlarge"
+            android:paddingRight="@dimen/indent_mlarge">
+
+            <ImageView
+                android:id="@+id/iconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iconCloseImageView"
+                android:layout_toRightOf="@id/iconImageView"
+                android:paddingLeft="@dimen/indent_medium"
+                android:textColor="@color/colorBgPrimary"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iconCloseImageView"
+                style="@style/ClickableBackground"
+                android:layout_width="@dimen/message_close_image_height"
+                android:layout_height="@dimen/message_close_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/message_close_image_padding" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
